@@ -1,0 +1,15 @@
+<h2>{{ product.name }}</h2>
+<p>{{ product.description }}</p>
+
+<h3>Avis des clients :</h3>
+{% for review in reviews %}
+    <p><strong>{{ review.user }}</strong> ({{ review.rating }}/5)</p>
+    <p>{{ review.comment }}</p>
+{% endfor %}
+
+<h3>Ajouter un avis :</h3>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Soumettre</button>
+</form>

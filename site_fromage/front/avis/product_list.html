@@ -1,0 +1,23 @@
+<form method="GET">
+    <label for="category">Catégorie :</label>
+    <select name="category">
+        <option value="">Toutes</option>
+        <option value="fromage">Fromage</option>
+        <option value="lait">Lait</option>
+        <option value="beurre">Beurre</option>
+    </select>
+
+    <label for="sort_by">Trier par :</label>
+    <select name="sort_by">
+        <option value="name">Nom</option>
+        <option value="price">Prix</option>
+    </select>
+
+    <button type="submit">Appliquer</button>
+</form>
+
+<ul>
+    {% for product in products %}
+        <li>{{ product.name }} - {{ product.price }} €</li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,20 @@
+<div id="map" style="height: 400px;"></div>
+
+<script>
+  function initMap() {
+    var location = {lat: 48.734067, lng: -3.466938};  // Coordonné de la fromagerie
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 12,
+      center: location
+    });
+    var marker = new google.maps.Marker({
+      position: location,
+      map: map
+    });
+  }
+</script>
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=?????????????????callback=initMap"> // Manque API_Key (???????) mais je trouve pas 
+</script>
+ 
