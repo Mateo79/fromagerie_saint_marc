@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <title>Fromagerie de Saint-Marc</title>
+    <link rel="icon" href="img/fromage_logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Importation de jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    
+    <div class="haut">
+        <header>
+            <div class="logo">
+                <img src="img/fromage_logo.png" alt="Logo" class="logo">
+            </div>
+            <a href="produit_locaux.html">Produits de notre région</a>
+            <a href="fromage.htm">Nos Fromages</a>
+        </header>
+        <main>
+            <div class="center">
+                <h1>Fromagerie de Saint-Marc</h1>
+                <p>Depuis 2016, notre seul but est de vous faire découvrir 
+                ou de vous permettre de vous fournir un fromage au lait cru
+                de qualité. En tant que fromagers indépendants, nous nous
+                permettons de promouvoir les petits commerçants des environs.
+                Alors, n'hésitez pas à passer en magasin pour vous faire plaisir.</p>
+            </div>   
+        </main>
+    </div>
+    <div class="cadre">
+       <img src="img/fromage.png" alt="La fromagerie" title="La fromagerie">
+    </div>
+    <div class="horaires">
+        <h2>Horaires et adresse</h2>
+        <p>Situé au : 17 Rue Saint-Marc, 22300 Lannion, France</p>
+        <p>Nous sommes ouverts du mardi au vendredi : 9h30/13h00-14h30/19h00. Le samedi, de 9h30 à 19h00 en continu.</p>
+        <a href="https://www.facebook.com/votre-page-facebook" target="_blank" class="facebook-btn">
+            <i class="fab fa-facebook-f"></i> Venez nous voir sur facebook
+        </a>
+    </div>
+    <footer>Nous vous remercions d'avance de votre passage en boutique</footer>
+
+    <!-- Script jQuery pour ajouter des interactions -->
+    <script>
+        $(document).ready(function() {
+            // Exemple d'effet : changement de couleur au survol du lien
+            $('a').hover(function() {
+                $(this).css('color', '#f39c12'); // Changer la couleur au survol
+            }, function() {
+                $(this).css('color', ''); // Rétablir la couleur d'origine
+            });
+
+            // Exemple d'effet : affichage d'une alerte au clic sur le bouton Facebook
+            $('.facebook-btn').click(function(event) {
+                event.preventDefault(); // Empêche l'action par défaut
+                alert('Merci de nous suivre sur Facebook!');
+                window.open($(this).attr('href'), '_blank'); // Ouvre le lien dans un nouvel onglet
+            });
+        });
+    </script>
+</body>
+</html>

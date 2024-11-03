@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: black;
+    color: white; 
+}
+
+/* Style pour le texte encadré */
+.encadre {
+    border: 2px solid #333; 
+    padding: 10px;          
+    margin-bottom: 20px;    
+    border-radius: 5px;     
+    background-color: #000000;
+}
+
+.h1 {
+    color: rgb(210, 221, 49);
+}
+
+/* Style spécifique pour les sections avec images */
+.brebies, .molle, .fleurie, .charcuterie {
+    margin-bottom: 20px; 
+    position: relative; 
+    width: 80%;
+    margin: 0 auto; 
+    text-align: center; 
+}
+
+.image {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 10px; 
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5em; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.haut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.haut h1 {
+    color: rgb(210, 221, 49);
+}
+
+header {
+    width: 100%;
+    background-color: #5a5858;
+    padding: 10px 0;
+}
+
+header a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #f5f0f0;
+}
+
+footer {
+    background-color: #333; /* Couleur de fond du footer */
+    color: #e4e4e4;            /* Couleur du texte du footer */
+    padding: 20px;          /* Espacement intérieur du footer */
+    text-align: center;     /* Centrer le texte */
+    position: relative;     /* Positionnement relatif pour pouvoir ajouter d'autres éléments */
+}

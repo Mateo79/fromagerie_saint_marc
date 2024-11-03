@@ -1,0 +1,9 @@
+/* style.css */
+
+.encadre {
+    border: 2px solid #000; /* Bordure noire de 2px d'épaisseur */
+    padding: 15px;         /* Espace intérieur autour du texte */
+    margin: 20px 0;        /* Marge au-dessus et en-dessous du cadre */
+    border-radius: 5px;    /* Coins arrondis de 5px */
+    background-color: #f9f9f9; /* Couleur de fond légère */
+}
